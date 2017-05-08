@@ -184,7 +184,7 @@ public class SamlToolKit
             assertion.setIssuer(issuer);
             assertion.setIssueInstant(now);
             assertion.setVersion(SAMLVersion.VERSION_20);
-
+            assertion.setSubject(subject);
             assertion.getAuthnStatements().add(authnStatement);
             assertion.getAttributeStatements().add(attrStatement);
             assertion.setConditions(conditions);
